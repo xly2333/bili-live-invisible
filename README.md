@@ -79,6 +79,12 @@ node tests/rewrite.test.cjs
 
 28 条用例（沙箱内真实执行脚本，覆盖 R1/R2/R3 语义、四通道、二进制 WS 帧、Request body、拦截优先交互）。
 
+## Bilibili-Evolved 版
+
+- 插件源码（BE 官方仓库形态）：`bilibili-evolved-plugin/registry/lib/plugins/bili-live-invisible/`（`index.ts` + `interceptor.ts` + `index.md`）
+- 可安装版：`bilibili-evolved-plugin/installable/bili-live-invisible.be-plugin.js` —— BE 设置面板 → 插件 → 安装插件，粘贴全文即可
+- 已向上游提交收录 PR（the1812/Bilibili-Evolved#5918）；⚠️ 插件在 BE 核心初始化后才安装拦截，BE 启动前的首屏请求无法覆盖，详见 `index.md`
+
 ## Credits
 
 - 语义参考：[lzghzr/bilibili-live-invisible](https://github.com/lzghzr/bilibili-live-invisible)（Xposed 模块）
