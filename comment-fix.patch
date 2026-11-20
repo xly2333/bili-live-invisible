@@ -1,0 +1,11 @@
+diff --git a/registry/lib/plugins/live/bili-live-invisible/invisible.ts b/registry/lib/plugins/live/bili-live-invisible/invisible.ts
+--- a/registry/lib/plugins/live/bili-live-invisible/invisible.ts
++++ b/registry/lib/plugins/live/bili-live-invisible/invisible.ts
+@@ -6,6 +6,6 @@
+  *     rumt-zh.com / nlog.daxuesoutijiang.com
+  *   - low 层: api.live.bilibili.com/xlive/.../tracker/、hdslb 静态资源日志、
+- *     */report、MsgReport、心跳上报
++ *     以 /report 结尾的路径、MsgReport、心跳上报
+  *
+  * 被拦截的请求会返回 `{"code":0}` 的空成功响应, 页面逻辑不感知。
+  * 身份字段改写的完整版以独立用户脚本形式发布在:
